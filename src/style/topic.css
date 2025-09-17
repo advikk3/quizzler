@@ -1,0 +1,109 @@
+/* Container with gradient background and fade-in */
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c3ecff, #ffffff);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title with shadow and subtle animation */
+.topic-container h1 {
+  color: #0056b3;
+  font-size: 56px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  animation: bounce 1s ease;
+}
+
+/* Subtle bounce animation for title */
+@keyframes bounce {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Labels */
+.topic-container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Inputs and select with shadow and transition */
+.topic-container input[type="text"],
+.topic-container input[type="number"],
+.topic-container select {
+  margin-left: 10px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #cce0ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* Focus effect */
+.topic-container input:focus,
+.topic-container select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+  transform: scale(1.03);
+}
+
+/* Number input width */
+.topic-container input[type="number"] {
+  width: 90px;
+}
+
+/* Button with gradient, shadow, hover, and scale effect */
+.topic-container button {
+  padding: 14px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #0056b3, #0099ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Hover effect for button */
+.topic-container button:hover {
+  background: linear-gradient(45deg, #003d80, #007acc);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Smooth card-like look for label+input */
+.topic-container label {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  width: 300px;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on input card */
+.topic-container label:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

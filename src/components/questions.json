@@ -1,0 +1,66 @@
+{
+  "Photosynthesis": [
+    {"question": "Which organelle performs photosynthesis?", "options": ["Mitochondria","Chloroplast","Nucleus","Ribosome"], "answer": "Chloroplast"},
+    {"question": "Photosynthesis produces which gas as a by-product?", "options": ["Oxygen","Carbon Dioxide","Nitrogen","Hydrogen"], "answer": "Oxygen"},
+    {"question": "Which pigment absorbs light for photosynthesis?", "options": ["Chlorophyll","Hemoglobin","Carotene","Xanthophyll"], "answer": "Chlorophyll"},
+    {"question": "Photosynthesis occurs mainly in which part of the plant?", "options": ["Roots","Stem","Leaves","Flowers"], "answer": "Leaves"},
+    {"question": "Which molecule stores energy in photosynthesis?", "options": ["ATP","ADP","Glucose","CO2"], "answer": "Glucose"},
+    {"question": "What is the main source of energy for photosynthesis?", "options": ["Water","Sunlight","Soil","Wind"], "answer": "Sunlight"},
+    {"question": "Which gas is taken in during photosynthesis?", "options": ["Oxygen","Carbon Dioxide","Nitrogen","Methane"], "answer": "Carbon Dioxide"},
+    {"question": "Light-dependent reactions occur in which part of chloroplast?", "options": ["Thylakoid","Stroma","Nucleus","Cell membrane"], "answer": "Thylakoid"},
+    {"question": "Calvin cycle is also called?", "options": ["Light reaction","Dark reaction","Krebs cycle","Glycolysis"], "answer": "Dark reaction"},
+    {"question": "What is the main product of photosynthesis?", "options": ["Water","Glucose","Oxygen","ATP"], "answer": "Glucose"}
+  ],
+
+  "Basic Algebra": [
+    {"question": "Solve for x: 2x + 5 = 13", "options": ["4","5","3","6"], "answer": "4"},
+    {"question": "Simplify: 3x + 2x", "options": ["5x","6x","x","1"], "answer": "5x"},
+    {"question": "If x - 7 = 10, what is x?", "options": ["17","3","-3","10"], "answer": "17"},
+    {"question": "Factor: x^2 + 5x + 6", "options": ["(x+2)(x+3)","(x+1)(x+6)","(x+2)(x+2)","(x+3)(x+3)"], "answer": "(x+2)(x+3)"},
+    {"question": "Solve: 5x = 20", "options": ["5","10","4","20"], "answer": "4"},
+    {"question": "Simplify: 2(x + 3)", "options": ["2x + 3","2x + 6","x + 6","x + 3"], "answer": "2x + 6"},
+    {"question": "If 3x = 12, then x =", "options": ["3","4","5","6"], "answer": "4"},
+    {"question": "Solve: x/5 = 2", "options": ["2","5","10","7"], "answer": "10"},
+    {"question": "Expand: (x+2)(x+3)", "options": ["x^2 + 5x + 6","x^2 + 6x + 5","x^2 + 2x + 3","x^2 + 3x + 2"], "answer": "x^2 + 5x + 6"},
+    {"question": "Simplify: 4x - 2x + 3", "options": ["2x + 3","6x + 3","2x - 3","4x + 3"], "answer": "2x + 3"}
+  ],
+
+  "Light": [
+    {"question": "Light travels fastest in?", "options": ["Vacuum","Air","Water","Glass"], "answer": "Vacuum"},
+    {"question": "Which color has the shortest wavelength?", "options": ["Red","Blue","Green","Yellow"], "answer": "Blue"},
+    {"question": "Which color is refracted most in a prism?", "options": ["Red","Violet","Green","Orange"], "answer": "Violet"},
+    {"question": "Reflection occurs when light hits?", "options": ["Transparent surface","Opaque surface","Mirror","Water"], "answer": "Mirror"},
+    {"question": "Refraction is caused due to?", "options": ["Change in speed of light","Reflection","Diffraction","Interference"], "answer": "Change in speed of light"},
+    {"question": "Lens that converges light?", "options": ["Concave","Convex","Plane","Diverging"], "answer": "Convex"},
+    {"question": "Which phenomenon causes a rainbow?", "options": ["Reflection","Refraction","Diffraction","Dispersion"], "answer": "Dispersion"},
+    {"question": "Angle of incidence equals angle of?", "options": ["Refraction","Reflection","Diffusion","Deviation"], "answer": "Reflection"},
+    {"question": "Unit of luminous intensity?", "options": ["Candela","Lumen","Lux","Watt"], "answer": "Candela"},
+    {"question": "Light is a type of?", "options": ["Mechanical wave","Electromagnetic wave","Sound wave","Matter"], "answer": "Electromagnetic wave"}
+  ],
+
+  "Motion": [
+    {"question": "Speed is?", "options": ["Distance/Time","Time/Distance","Velocity/Time","Distance x Time"], "answer": "Distance/Time"},
+    {"question": "Velocity includes?", "options": ["Speed only","Direction only","Speed & Direction","Distance"], "answer": "Speed & Direction"},
+    {"question": "Acceleration = ?", "options": ["Change in velocity / time","Velocity x time","Distance / time","Force / mass"], "answer": "Change in velocity / time"},
+    {"question": "SI unit of force?", "options": ["Newton","Joule","Watt","Pascal"], "answer": "Newton"},
+    {"question": "Which is a scalar quantity?", "options": ["Velocity","Acceleration","Speed","Displacement"], "answer": "Speed"},
+    {"question": "Displacement is a?", "options": ["Vector","Scalar","Both","None"], "answer": "Vector"},
+    {"question": "Formula for acceleration?", "options": ["a = Δv/Δt","a = v/t^2","a = v^2/2","a = F/m"], "answer": "a = Δv/Δt"},
+    {"question": "Uniform motion means?", "options": ["Constant speed","Changing speed","No motion","Circular motion"], "answer": "Constant speed"},
+    {"question": "Distance-time graph slope represents?", "options": ["Speed","Acceleration","Force","Velocity"], "answer": "Speed"},
+    {"question": "SI unit of acceleration?", "options": ["m/s^2","m/s","km/h","N"], "answer": "m/s^2"}
+  ],
+
+  "Basic Organic Chemistry": [
+    {"question": "Methane is which type of hydrocarbon?", "options": ["Alkane","Alkene","Alkyne","Aromatic"], "answer": "Alkane"},
+    {"question": "Functional group -OH belongs to?", "options": ["Alcohol","Ketone","Aldehyde","Carboxylic Acid"], "answer": "Alcohol"},
+    {"question": "Ethanol formula?", "options": ["C2H5OH","CH4","C2H4","C2H6O2"], "answer": "C2H5OH"},
+    {"question": "Benzene is?", "options": ["Aromatic","Alkane","Alkene","Alkyne"], "answer": "Aromatic"},
+    {"question": "Carboxyl group is?", "options": ["-COOH","-OH","-NH2","-CHO"], "answer": "-COOH"},
+    {"question": "Which is saturated?", "options": ["Ethane","Ethene","Ethyne","Benzene"], "answer": "Ethane"},
+    {"question": "CH4 is called?", "options": ["Methane","Methanol","Ethane","Ethanol"], "answer": "Methane"},
+    {"question": "Double bond exists in?", "options": ["Alkene","Alkane","Alkyne","Aromatic"], "answer": "Alkene"},
+    {"question": "Functional group -CHO belongs to?", "options": ["Aldehyde","Ketone","Alcohol","Amine"], "answer": "Aldehyde"},
+    {"question": "C2H5COOH is?", "options": ["Propanoic acid","Ethanoic acid","Methanoic acid","Butanoic acid"], "answer": "Propanoic acid"}
+  ]
+}

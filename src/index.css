@@ -1,0 +1,79 @@
+/* Full page gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+ background: linear-gradient(135deg, #d0e4f7, #c0d9f0);
+
+  min-height: 100vh;
+  overflow: hidden; /* hide shapes that float outside */
+  position: relative;
+
+
+
+
+}
+
+/* Background shapes container */
+.background-shapes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Base style for all shapes */
+.shape {
+  position: absolute;
+  opacity: 0.18;
+  animation: drift 40s linear infinite, rotate 20s linear infinite;
+}
+
+/* Shapes */
+.shape.circle {
+  width: 120px;
+  height: 120px;
+  background: #0099ff;
+  border-radius: 50%;
+}
+
+.shape.square {
+  width: 100px;
+  height: 100px;
+  background: #ff6ec7;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #00cc88;
+}
+
+.shape.star {
+  width: 0;
+  height: 0;
+  color: gold;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
+                     68% 57%, 79% 91%, 50% 70%, 
+                     21% 91%, 32% 57%, 2% 35%, 
+                     39% 35%);
+  background: gold;
+  width: 80px;
+  height: 80px;
+}
+
+/* Animations */
+@keyframes drift {
+  0%   { transform: translateY(0) translateX(0); }
+  50%  { transform: translateY(-100px) translateX(50px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

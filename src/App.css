@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Full page gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #e6f0ff);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background shapes container */
+.background-shapes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none; /* shapes won't block clicks */
+}
+
+/* Base style for all shapes */
+.shape {
+  position: absolute;
+  opacity: 0.15;
+  animation: float 20s infinite ease-in-out, rotate 12s infinite linear;
+}
+
+/* Circle */
+.shape.circle {
+  width: 120px;
+  height: 120px;
+  background: #0099ff;
+  border-radius: 50%;
+  top: 20%;
+  left: 10%;
+}
+
+/* Square */
+.shape.square {
+  width: 100px;
+  height: 100px;
+  background: #ff6ec7;
+  top: 50%;
+  left: 70%;
+}
+
+/* Triangle */
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 120px solid #00cc88;
+  top: 75%;
+  left: 20%;
+}
+
+/* Float animation */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Quiz card stays above background */
+.quiz-container {
+  position: relative;
+  z-index: 1;
+  padding: 30px 20px;
+  max-width: 650px;
+  margin: 60px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
