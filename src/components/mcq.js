@@ -4,7 +4,7 @@ import questionsData from "./questions.json"; // local JSON
 import { api } from "./api"; // API fetcher
 import "../style/mcq.css";
 
-export default function Mcq({ topic, count, isApi = false, onRestart }) {
+export default function Mcq({ topic, count, isApi = true, onRestart }) {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [current, setCurrent] = useState(0);

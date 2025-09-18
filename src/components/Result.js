@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts";
-import "../style/result.css"
+import "../style/result.css";
+import Home from "./home";
 
-export default function Results({ total, correct, wrong, onRestart }) {
+export default function Results({ total, correct, wrong }) {
+  const [showHome, setShowHome] = useState(false);
+
   const data = [
     { name: "Correct", value: correct || 0 },
     { name: "Wrong", value: wrong || 0 },
     { name: "Unanswered", value: total - (correct + wrong) || 0 },
   ];
 
-  const COLORS = ["#28a745", "#dc3545", "#6c757d"]; // green, red, gray
+  const COLORS = ["#28a745", "#dc3545", "#6c757d"];
+
+  // if button clicked, show home
+  if (showHome) {
+    return <Home />;
+  }
 
   return (
     <div className="results-overlay">
       <div className="results-modal">
         <h2>Quiz Finished 🎉</h2>
 
-        {/* Fixed size PieChart instead of ResponsiveContainer */}
         <PieChart width={300} height={300}>
           <Pie
             data={data}
@@ -39,8 +46,8 @@ export default function Results({ total, correct, wrong, onRestart }) {
         <p className="results-stats correct">✅ Correct Answers: {correct}</p>
         <p className="results-stats wrong">❌ Wrong Answers: {wrong}</p>
 
-        <button className="nav-btn finish" onClick={onRestart}>
-          Restart Quiz
+        <button className="nav-btn finish" onClick={() => setShowHome(true)}>
+          Go to Home
         </button>
       </div>
     </div>
