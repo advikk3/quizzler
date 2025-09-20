@@ -14,7 +14,7 @@ export default function Results({ total, correct, wrong }) {
 
   const COLORS = ["#28a745", "#dc3545", "#6c757d"];
 
-  // if button clicked, show home
+
   if (showHome) {
     return <Home />;
   }

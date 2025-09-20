@@ -33,9 +33,9 @@ Random seed: ${Math.floor(Math.random() * 10000)}
     const model = genAI.getGenerativeModel({
       model: "gemini-1.5-flash",
       generationConfig: {
-        temperature: 0.9,      // for variety
+        temperature: 0.9,     
         topP: 0.95,
-        maxOutputTokens: 1200  // enough for 20+ MCQs
+        maxOutputTokens: 1200  
       },
     });
 
@@ -44,7 +44,7 @@ Random seed: ${Math.floor(Math.random() * 10000)}
     console.log("done")
     const text = result.response.text();
 
-    // Safely parse JSON
+ 
     let questions;
     try {
       questions = JSON.parse(text);
@@ -52,7 +52,6 @@ Random seed: ${Math.floor(Math.random() * 10000)}
       questions = [{ error: "Invalid JSON", raw: text }];
     }
 
-    // Log generated questions
     console.log("📝 Generated Questions:", questions);
 
     return questions;

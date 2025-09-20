@@ -13,9 +13,7 @@ function App() {
 
 
 
-      {/* Floating background shapes */}
-       
-      {/* Floating background shapes */}
+
       <div className="background-shapes">
         <div className="shape circle" style={{top: "10%", left: "5%"}}></div>
         <div className="shape square" style={{top: "20%", right: "10%"}}></div>

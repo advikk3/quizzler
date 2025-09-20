@@ -7,7 +7,7 @@ const Home = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Making learning fun and interactive....";
 
-  // Typing animation
+
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
@@ -22,14 +22,14 @@ const Home = () => {
 
   return (
     <div style={styles.container}>
-      {/* Floating background shapes */}
+     
       <div className="floating-shapes">
         <div className="shape circle"></div>
         <div className="shape triangle"></div>
         <div className="shape square"></div>
         <div className="shape star"></div>
       </div>
-      {/* Floating background shapes */}
+ 
 <div className="floating-shapes">
   <div className="shape circle" style={{ top: "10%", left: "5%" }}></div>
   <div className="shape triangle" style={{ top: "30%", right: "10%" }}></div>
@@ -39,16 +39,15 @@ const Home = () => {
 </div>
 
 
-      {/* Top-right dummy login */}
       <button style={styles.loginButton}>Login</button>
 
-      {/* App name */}
+  
       <h1 style={styles.title}>Quizzler.ai</h1>
 
-      {/* Typing text */}
+
       <p style={styles.typedText}>{typedText}</p>
 
-      {/* 3-line description */}
+
       <p style={styles.description}>Learn and challenge yourself with fun quizzes</p>
  
       <p style={{...styles.description, fontStyle: "italic"}}>helps you track your progress and get better</p>
