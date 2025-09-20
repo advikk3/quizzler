@@ -41,6 +41,7 @@ Random seed: ${Math.floor(Math.random() * 10000)}
 
     const result = await model.generateContent(prompt);
     console.log(result)
+    console.log("done")
     const text = result.response.text();
 
     // Safely parse JSON

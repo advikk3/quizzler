@@ -13,7 +13,8 @@ export default function Topic() {
     "Basic Algebra",
     "Light",
     "Motion",
-    "Basic Organic Chemistry"
+    "Basic Organic Chemistry",
+    "limits"
   ]
  const handleStart = () => {
   if (!topic) {

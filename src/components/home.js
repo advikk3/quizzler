@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Topic from "./topic"; 
-import "../style/home.css"; // you can put some extra styling here if needed
+import "../style/home.css"; 
 
 const Home = () => {
   const [showTopic, setShowTopic] = useState(false);
